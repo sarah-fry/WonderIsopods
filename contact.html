@@ -42,20 +42,25 @@
             cursor: pointer;
         }
         .email-bubble {
-            background-color: pink;
-            padding: 1rem 2rem;
-            border-radius: 999px; /* pill shape */
-            color: black;
-            font-weight: bold;
+            display: inline-block;
+            background-color: #f1f1f1;
+            border-radius: 25px;
+            padding: 12px 20px;
+            margin: center;
             text-align: center;
-
-            /* Centering for small screens */
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 1.1em;
+            font-weight: 600;
         }
 
+        .email-bubble a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .email-bubble a:hover {
+            color: #0077cc;
+        }
         @media screen and (max-width: 768px) {
             .topnav a {
                 display: none;
@@ -117,15 +122,6 @@
             margin: 10px;
         }
 
-        .email-icon {
-            height: 100px;
-            margin: 10px;
-        }
-
-        .spacer {
-            margin: 20px 0;
-        }
-
         footer {
             background-color: #591D1D;
             color: #f2f2f2;
@@ -173,7 +169,12 @@
         </div>
 
         <!-- Email Link -->
-        <div class="email-bubble">wonderisopods@gmail.com</div>
+        <div class="center-container">
+            <div class="email-bubble">
+                <a href="mailto:wonderisopods@gmail.com" target="_blank">wonderisopods@gmail.com</a>
+            </div>
+        </div>
+        
 
         <!-- Additional Text -->
         <div class="center-container">
